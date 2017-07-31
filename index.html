@@ -19,7 +19,11 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2 box">
 			<div class="coloring"><p class="subheading">Current Train Schedule</p></div>
-			<div id="train-schedule"></div>
+			<div class="table-responsive" id="train-schedule">
+  				<table class="table">
+   						 
+  				</table>
+			</div>
 		</div>
 		<div class="col-md-8 col-md-offset-2 box">
 			<div class="coloring"><p class="subheading">Add Train</p></div>
@@ -34,11 +38,11 @@
   			</div>
     		<div class="form-group">
     			<label for="time">First Train Time (HH:MM - Military Time)</label>
-    			<input type="time" class="form-control" id="train-time" placeholder="Time">
+    			<input type="time" class="form-control" id="train-time" placeholder="hrs:mins">
   			</div>
     		<div class="form-group">
     			<label for="frequency">Frequency (min)</label>
-    			<input type="number" min=0 max=60 class="form-control" id="frequency" placeholder="Minutes">
+    			<input type="number" min=0 max=60 class="form-control" id="train-frequency" placeholder="Minutes">
   			</div>
   				<button type="submit" class="btn btn-default" id="add-train">Submit</button>
   			 	
@@ -46,6 +50,15 @@
 		</div>
 	</div>
 </div>
+
+<!-- links to scripts -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+
+<script type="text/javascript" src="logic.js"> </script>
 
 </body>
 </html>

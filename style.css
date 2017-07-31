@@ -1,0 +1,54 @@
+.header {
+	background: url("green_dust_scratch.png");
+	font-family: "Verdana", Geneva, sans-serif;
+	text-align: center;
+	margin-bottom: 10px;
+	height: 150px;
+	padding: 2% 0 2% 0;
+	border-radius: 0 0 10px 10px;
+}
+
+#heading {
+	font-size: 40px;
+	font-weight: bolder;
+}
+
+.box {
+	border: #4682B4 solid 2px;
+	margin-bottom: 10px;
+	padding: 0 0 0 0;
+	border-radius: 0 0 10px 10px;
+	background: white;
+
+}
+
+#add-train {
+	background-color: #4682B4;
+	color: white;
+}
+#add-train:hover {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.subheading {
+	padding: 5px;
+	color: white;
+	font-family: "Verdana", Geneva, sans-serif;
+	font-size: 15px;
+
+
+}
+
+.coloring {
+	background-color: #4682B4;
+
+}
+
+.inputs {
+	padding: 8px;
+}
+
+body {
+	background: url("gplaypattern.png");
+}

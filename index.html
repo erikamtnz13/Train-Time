@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>Train Times | Erika Martinez</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<div class="container fluid">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2 header">
+			<p id="heading">Anytime is Train Time</p>
+			<h4>Choo Choo. Chee Chee.</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2 box">
+			<div class="coloring"><p class="subheading">Current Train Schedule</p></div>
+			<div id="train-schedule"></div>
+		</div>
+		<div class="col-md-8 col-md-offset-2 box">
+			<div class="coloring"><p class="subheading">Add Train</p></div>
+			<form class="inputs">
+ 			<div class="form-group" id="train-info">
+    			<label for="train-name">Train Name</label>
+   				<input type="text" class="form-control" id="train-name" placeholder="Name">
+  			</div>
+  			<div class="form-group">
+    			<label for="destinationName">Destination</label>
+    			<input type="text" class="form-control" id="train-destination" placeholder="Destination">
+  			</div>
+    		<div class="form-group">
+    			<label for="time">First Train Time (HH:MM - Military Time)</label>
+    			<input type="time" class="form-control" id="train-time" placeholder="Time">
+  			</div>
+    		<div class="form-group">
+    			<label for="frequency">Frequency (min)</label>
+    			<input type="number" min=0 max=60 class="form-control" id="frequency" placeholder="Minutes">
+  			</div>
+  				<button type="submit" class="btn btn-default" id="add-train">Submit</button>
+  			 	
+			</form>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

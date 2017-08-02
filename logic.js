@@ -40,7 +40,11 @@ $("#add-train").on("click", function (event) {
 
 database.ref("trainTimes").on("child_added", function(snapshot){
  console.log("This is coming from the database: " + snapshot.val().name);
- $("#train-data").append("<br>" + snapshot.val().name);
+ $("#name-data").append(snapshot.val().name + "<br>");
+ $("#destination-data").append(snapshot.val().destination + "<br>");
+ $("#frequency-data").append(snapshot.val().frequency + "<br>");
+ $("#next-data").append(snapshot.val().firstTrain + "<br>");
+ $("#minutes-data").append(snapshot.val().frequency + "<br>");
 
 })
 

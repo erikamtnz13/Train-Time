@@ -56,3 +56,6 @@ body {
 #train-data {
 	padding: 3px;
 }
+td {
+	padding-left: 3px;
+}

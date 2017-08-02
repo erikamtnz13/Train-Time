@@ -40,7 +40,7 @@ $("#add-train").on("click", function (event) {
 
 database.ref("trainTimes").on("child_added", function(snapshot){
  console.log("This is coming from the database: " + snapshot.val().name);
-
+ $("#train-data").append("<br>" + snapshot.val().name);
 
 })
 

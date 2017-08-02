@@ -52,3 +52,7 @@
 body {
 	background: url("gplaypattern.png");
 }
+
+#train-data {
+	padding: 3px;
+}
